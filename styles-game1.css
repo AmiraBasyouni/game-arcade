@@ -1,19 +1,52 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif, serif;
 }
+
+body{
+	background-image: url('https://wallpapers.com/images/high/pixel-background-dydt7w471f7t63js.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+canvas{
+	background-color: white;
+}
+
+a:link, a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:active{
+	color: purple;
+}
+
 
 header {
 	text-align: center;
 	font-weight: bold;
-	background-color: #C9E4CA;
+	background-color: black;
+	color: white;
+	text-shadow:
+	-1px 0px 4px black,
+	0px -1px 4px black,
+	1px 0px 4px black,
+	0px 1px 4px black;
+	padding: 10px;
+}
+
+h2{
+	text-align: center;
+	padding: 10px;
+	background-color: #231942;
 	color: white;
 	text-shadow:
 	-1px 0px 2px black,
 	0px -1px 2px black,
 	1px 0px 2px black,
 	0px 1px 2px black;
-	padding: 10px;
 }
 
 main{
@@ -29,4 +62,10 @@ canvas{
 
 footer{
 	text-align: center;
+	color: white;
+}
+
+footer>a:link, footer>a:visited{
+	color: white;
+	text-decoration: underline;
 }

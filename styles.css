@@ -1,6 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif, serif;
+}
+
+img{
+	background-color: white;
+}
+
+body{
+	background-image:url('https://wallpapers.com/downloads/high/pixel-background-dydt7w471f7t63js.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 ul {
@@ -15,77 +26,58 @@ ul {
 header {
   text-align: center;
   font-weight: bold;
-  background-color: #c9e4ca;
+  background-color: black;
   color: white;
   text-shadow:
 		/*x-offset, y-offset, radius, color*/
-    -1px 0px 2px Black,
-    0px -1px 2px Black,
-    1px 0px 2px Black,
-    0px 1px 2px Black;
+    -1px 0px 4px Black,
+    0px -1px 4px Black,
+    1px 0px 4px Black,
+    0px 1px 4px Black;
   padding: 10px;
-}
-
-#slideshow {
-  background-color: #c9e4ca;
-  margin: 30px 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#preview-img {
-  height: 300px;
-  align-self: center;
-  margin: auto;
-}
-
-button {
-  background-color: #364958;
-  color: white;
-  padding: 10px;
-  border: none;
-  font-size: 40px;
-}
-
-button:hover {
-  background-color: #3b6064;
-}
-
-button:active {
-  background-color: #364958;
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  background-color: #c9e4ca;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#001233, #5e548e, #001233);
+  background-color: #3a506b;
   border-radius: 25px;
-  margin: 40px;
+  border-style: solid;
+  margin: 70px;
+  padding: 30px;
 }
 
 section {
   width: 200px;
   height: 300px;
   border-style: solid;
-  border-radius: 10px;
   border-width: 2px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  border-radius: 10px;
+  margin: 20px;
   text-align: center;
-  background-color: white;
+  background-color: black;
+  background-image: linear-gradient( #231942, #5e548e);
+  padding: 10px;
 }
 
 section > a>img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
+  width: 190px;
+  height: 190px;
+}
+
+#verbal-overview > p {
+	padding-top: 5px;
+}
+
+#verbal-overview{
+	color: white;
+	padding: 5px;
 }
 
 section:hover {
   box-shadow: 0px 2px 2px black;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   height: 295px;
   opacity: 0.7;
 }
@@ -101,4 +93,10 @@ a:active>*{
 
 footer {
   text-align: center;
+  color: white;
+}
+
+footer>a:link, footer>a:visited{
+	text-decoration: underline;
+	color: white;
 }
