@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="a page containing three games" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Game Arcade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Game Arcade</h1>
+    </header>
+    <nav aria-label="Menu">
+      <ul>
+        <li>Game1</li>
+        <li>Game2</li>
+        <li>Game3</li>
+      </ul>
+    </nav>
+
+    <div id="slideshow">
+      <button id="left"><span>&#8592;</span></button>
+      <img id="preview-img" src="./bird.jpg" alt="a bird" />
+      <button id="right"><span>&#8594;</span></button>
+    </div>
+    <main>
+        <section id="game-preview" class="fade">
+      <a href="./game1.html" target="_self" id="play-button">
+          <img src="./bird.jpg" alt="a bird" />
+          <div id="verbal-overview">
+            <h2>Game Title</h2>
+            <p>game description</p>
+          </div>
+      </a>
+        </section>
+    </main>
+    <footer>Copyright © 2024 Amira Basyouni</footer>
+  </body>
+</html>

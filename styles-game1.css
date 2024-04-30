@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	font-weight: bold;
+	background-color: #C9E4CA;
+	color: white;
+	text-shadow:
+	-1px 0px 2px black,
+	0px -1px 2px black,
+	1px 0px 2px black,
+	0px 1px 2px black;
+	padding: 10px;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+}
+
+canvas{
+	margin: 20px;
+	border-style: solid;
+
+}
+
+footer{
+	text-align: center;
+}
