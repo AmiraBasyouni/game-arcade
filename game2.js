@@ -166,6 +166,8 @@ function update_canvas(){
 	if (offscreen_left(pillar_obstacle)){
 		position_right_offscreen(pillar_obstacle);
 		score += 1;
+		// assigns position of gap randomly between 0 and max gap position
+		pillar_obstacle.gap_position = Math.random() * (canvasElement.height - pillar_obstacle.gap_size);
 	}
 	if (pillar_collision_detected(user, pillar_obstacle) || user.y >= canvasElement.height){
 		game_over = true;
@@ -215,4 +217,3 @@ function draw_score(){
 
 draw_canvas();
 draw_startMessage();
-
