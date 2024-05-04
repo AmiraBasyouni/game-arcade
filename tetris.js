@@ -178,7 +178,9 @@ function valid( offsetX, offsetY, newCurrent ) {
                   || x + offsetX >= COLS ) {
                     if (offsetY == 1 && freezed) {
                         lose = true; // lose if the current shape is settled at the top most row
-                        document.getElementById('playbutton').disabled = false;
+			game_started = false;
+			game_over_message();
+			//document.getElementById('playbutton').disabled = false;
                     } 
                     return false;
                 }
@@ -188,10 +190,12 @@ function valid( offsetX, offsetY, newCurrent ) {
     return true;
 }
 
+/*
 function playButtonClicked() {
     newGame();
     document.getElementById("playbutton").disabled = true;
 }
+*/
 
 function newGame() {
     clearAllIntervals();

@@ -35,4 +35,49 @@ function render() {
             }
         }
     }
+	if(lose){
+		game_over_message();
+	}
 }
+
+
+
+let game_started = false;
+// event listener to start the game
+canvas.addEventListener("click", catch_click);
+
+function catch_click(){
+	if (!game_started){
+		newGame();
+		game_started = true;
+	}
+}
+
+
+function start_game_message(){
+	ctx.font= "24px serif";
+	ctx.fillStyle = "#454545";
+	ctx.textAlign = "center";
+	ctx.fillText("click on canvas to start", canvas.width/2, canvas.height/2);
+	ctx.fillStyle = "black";
+}
+
+function game_over_message(){
+	// writing game over
+	ctx.font = "40px serif";
+	ctx.textAlign = "center";
+	ctx.fillStyle = "white";
+	ctx.fillText("Game Over", canvas.width/2, canvas.height/2);
+	ctx.strokeStyle = "black"; 
+	ctx.strokeText("Game Over", canvas.width/2, canvas.height/2);
+	// writing click on canvas to restart
+	ctx.font = "22px serif";
+	ctx.fillStyle = "white";
+	ctx.fillText("click on canvas to restart", canvas.width/2, canvas.height/2 + 35);
+	ctx.strokeStyle = "#454545";
+	ctx.strokeText("click on canvas to restart", canvas.width/2, canvas.height/2 + 35);
+	ctx.strokeStyle = "black";
+	ctx.fillStyle = "black"; 
+}
+
+start_game_message();
