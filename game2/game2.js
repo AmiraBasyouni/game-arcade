@@ -58,7 +58,7 @@ function catch_keydown(event){
 	}
 }
 
-canvas.addEventListener("click", catch_click);
+canvasElement.addEventListener("click", catch_click);
 function catch_click(event){
 	if(game_over){
 		// I added 100 to account for user moving their hand from the mouse to the spacebar
