@@ -39,14 +39,28 @@ header {
 }
 
 main {
-  display: flex;
-  justify-content: space-evenly;
   background-image: linear-gradient(#001233, #5e548e, #001233);
   background-color: #3a506b;
   border-radius: 25px;
   border-style: solid;
   margin: 70px;
-  padding: 30px;
+}
+
+@media (min-width: 925px){
+  main{
+	  display: flex;
+	  justify-content: space-evenly;
+  }
+  section{
+	  margin: 20px;
+  }
+}
+
+@media (max-width: 924px){
+	section{
+		display: block;
+		margin: 20px auto;
+	}
 }
 
 section {
@@ -55,7 +69,6 @@ section {
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
-  margin: 20px;
   text-align: center;
   background-color: black;
   background-image: linear-gradient(#231942, #5e548e);
